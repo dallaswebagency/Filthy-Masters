@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Biohazard &amp; Hoarding Cleaning Calgary | Filthy Masters</title>
+<meta name="description" content="Biohazard property restoration and specialized hoarding cleaning in Calgary. 24/7 emergency response for biohazard, drug, trauma, flood and hoarding cleanup. Veteran owned since 2017.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800;900&family=Archivo:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --black:#08090a;
+  --ink:#101416;
+  --ink2:#161c1f;
+  --line:#253035;
+  --navy:#00415e;
+  --blue:#0098de;
+  --blue-l:#4cc0f2;
+  --paper:#eef1f2;
+  --paper2:#dfe5e8;
+  --mute:#8a979d;
+  --head:'Big Shoulders Display',Impact,sans-serif;
+  --body:'Archivo',system-ui,sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,monospace;
+  --chamfer:polygon(0 0,calc(100% - 28px) 0,100% 28px,100% 100%,28px 100%,0 calc(100% - 28px));
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);background:var(--black);color:var(--paper);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1280px,92vw);margin:0 auto}
+.mono{font-family:var(--mono);font-size:.74rem;letter-spacing:.14em;text-transform:uppercase}
+.btn{display:inline-flex;align-items:center;gap:.6rem;font-family:var(--mono);font-weight:700;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;padding:1rem 1.4rem;border:2px solid var(--blue);transition:.25s;cursor:pointer}
+.btn-fill{background:var(--blue);color:var(--black)}
+.btn-fill:hover{background:var(--paper);border-color:var(--paper)}
+.btn-line{color:var(--paper)}
+.btn-line:hover{background:var(--blue);color:var(--black)}
+.btn svg{width:16px;height:16px}
+
+/* dispatch bar */
+.dispatch{background:var(--blue);color:var(--black);font-family:var(--mono);font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+.dispatch .wrap{display:flex;justify-content:space-between;align-items:center;padding:.55rem 0;gap:1rem}
+.pulse{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--black);margin-right:.6rem;animation:pulse 1.4s infinite}
+@keyframes pulse{50%{opacity:.2}}
+.dispatch a:hover{text-decoration:underline}
+.dispatch .d-right{display:flex;gap:1.6rem}
+
+/* header */
+header{position:sticky;top:0;z-index:50;background:rgba(8,9,10,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:84px;gap:2rem}
+.logo img{height:58px;width:auto}
+nav ul{display:flex;list-style:none;gap:1.6rem}
+nav a{font-family:var(--mono);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:#c4ccd0;position:relative;padding:.3rem 0}
+nav a::after{content:"";position:absolute;left:0;bottom:-2px;width:0;height:2px;background:var(--blue);transition:.25s}
+nav a:hover{color:var(--paper)}nav a:hover::after{width:100%}
+.h-cta{display:flex;gap:.7rem;align-items:center}
+.h-cta .btn{padding:.75rem 1.1rem}
+.burger{display:none;background:none;border:0;color:var(--paper);cursor:pointer}
+.burger svg{width:30px;height:30px}
+
+/* hero */
+.hero{position:relative;min-height:calc(100vh - 118px);display:grid;align-items:end;overflow:hidden;border-bottom:1px solid var(--line)}
+.hero-bg{position:absolute;inset:0}
+.hero-bg img{width:100%;height:100%;object-fit:cover;filter:grayscale(.35) contrast(1.05)}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,9,10,.97) 0%,rgba(8,9,10,.86) 45%,rgba(8,9,10,.35) 100%),linear-gradient(0deg,rgba(8,9,10,1) 0%,transparent 40%)}
+.hero-grid{position:relative;display:grid;grid-template-columns:1.35fr .9fr;gap:4rem;align-items:end;padding:6rem 0 4.5rem}
+.motto-v{position:absolute;right:-3.4rem;top:50%;transform:translateY(-50%) rotate(90deg);font-family:var(--mono);font-size:.7rem;letter-spacing:.5em;color:var(--blue);white-space:nowrap}
+.tag{display:inline-flex;align-items:center;gap:.7rem;color:var(--blue);margin-bottom:1.6rem}
+.tag::before{content:"";width:34px;height:2px;background:var(--blue)}
+h1{font-family:var(--head);font-weight:900;text-transform:uppercase;font-size:clamp(3rem,6.6vw,6.4rem);line-height:.88;letter-spacing:-.005em}
+h1 .out{color:transparent;-webkit-text-stroke:2px var(--blue)}
+h1 .blue{color:var(--blue)}
+.hero-sub{margin-top:1.8rem;max-width:560px;font-size:1.12rem;color:#c4ccd0}
+.hero-sub strong{color:var(--paper)}
+.hero-btns{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:2.2rem}
+
+/* console */
+.console{background:rgba(16,20,22,.94);border:1px solid var(--line);clip-path:var(--chamfer);padding:2rem}
+.console-top{display:flex;justify-content:space-between;align-items:center;border-bottom:1px dashed var(--line);padding-bottom:1rem;margin-bottom:1.4rem}
+.console-top .mono{color:var(--mono-c,#8a979d)}
+.live{color:var(--blue)!important}
+.console h3{font-family:var(--head);font-weight:800;font-size:2rem;text-transform:uppercase;line-height:1;margin-bottom:1.2rem}
+.choice{display:grid;grid-template-columns:1fr 1fr;gap:.6rem;margin-bottom:1.2rem}
+.choice a{border:1px solid var(--line);padding:1rem;transition:.2s;display:block}
+.choice a:hover{border-color:var(--blue);background:rgba(0,152,222,.08)}
+.choice b{display:block;font-family:var(--head);font-size:1.35rem;text-transform:uppercase;letter-spacing:.02em}
+.choice span{font-size:.82rem;color:var(--mute)}
+.lines a{display:flex;justify-content:space-between;align-items:center;padding:.85rem 0;border-top:1px solid var(--line);transition:.2s}
+.lines a:hover{color:var(--blue)}
+.lines .num{font-family:var(--head);font-weight:800;font-size:1.6rem;letter-spacing:.02em}
+.console .btn{width:100%;justify-content:center;margin-top:1.1rem}
+
+/* ticker */
+.ticker{background:var(--paper);color:var(--black);overflow:hidden;border-bottom:1px solid var(--line)}
+.ticker-track{display:flex;width:max-content;animation:tick 42s linear infinite}
+.ticker span{font-family:var(--head);font-weight:800;font-size:1.6rem;text-transform:uppercase;padding:.9rem 1.6rem;white-space:nowrap;display:flex;align-items:center;gap:3.2rem}
+.ticker span::after{content:"";width:12px;height:12px;background:var(--blue);transform:rotate(45deg)}
+@keyframes tick{to{transform:translateX(-50%)}}
+
+/* fronts */
+.fronts{display:grid;grid-template-columns:1fr 1fr;min-height:560px}
+.front{position:relative;overflow:hidden;display:flex;align-items:flex-end;padding:3rem;isolation:isolate}
+.front img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform .8s}
+.front::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,rgba(8,9,10,.95) 10%,rgba(8,9,10,.25) 70%)}
+.front.com::before{background:linear-gradient(0deg,rgba(0,40,58,.96) 10%,rgba(0,65,94,.35) 70%)}
+.front:hover img{transform:scale(1.05)}
+.front .idx{position:absolute;top:2.4rem;left:3rem;font-family:var(--head);font-size:7rem;font-weight:900;line-height:1;color:transparent;-webkit-text-stroke:1.5px rgba(238,241,242,.45)}
+.front h2{font-family:var(--head);font-weight:900;font-size:clamp(2.6rem,4.4vw,4.2rem);text-transform:uppercase;line-height:.9;margin:.6rem 0 1.4rem}
+.front .mono{color:var(--blue-l)}
+.front .arrow{display:inline-flex;align-items:center;gap:.8rem;font-family:var(--mono);font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;border-bottom:2px solid var(--blue);padding-bottom:.4rem}
+.front:hover .arrow{color:var(--blue-l)}
+
+/* critical response */
+.critical{padding:8rem 0;background:var(--ink)}
+.crit-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:5rem}
+.crit-side{position:sticky;top:120px;align-self:start}
+.sec-tag{color:var(--blue);display:flex;align-items:center;gap:.7rem;margin-bottom:1.2rem}
+.sec-tag b{background:var(--blue);color:var(--black);padding:.2rem .5rem}
+h2.big{font-family:var(--head);font-weight:900;font-size:clamp(2.6rem,4.6vw,4.6rem);line-height:.9;text-transform:uppercase}
+h2.big .blue{color:var(--blue)}
+.crit-side p{margin-top:1.5rem;color:#b5bfc4;max-width:440px}
+.viewer{margin-top:2.2rem;position:relative;aspect-ratio:4/3;clip-path:polygon(0 0,100% 0,100% calc(100% - 40px),calc(100% - 40px) 100%,0 100%);background:var(--black)}
+.viewer img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .45s}
+.viewer img.on{opacity:1}
+.viewer .stamp{position:absolute;left:1rem;top:1rem;background:var(--black);color:var(--blue);padding:.35rem .6rem;z-index:2}
+.crit-list{list-style:none;border-top:1px solid var(--line)}
+.crit-list li a{display:grid;grid-template-columns:70px 1fr 40px;gap:1.2rem;align-items:start;padding:2rem 0;border-bottom:1px solid var(--line);transition:.25s}
+.crit-list .n{font-family:var(--mono);color:var(--mute);font-size:.85rem;padding-top:.5rem}
+.crit-list h3{font-family:var(--head);font-weight:800;font-size:2.1rem;text-transform:uppercase;line-height:1;transition:.25s}
+.crit-list p{color:#9aa6ab;margin-top:.6rem;font-size:.97rem;max-width:520px}
+.crit-list .go{width:40px;height:40px;border:1px solid var(--line);display:grid;place-items:center;transition:.25s;margin-top:.2rem}
+.crit-list li a:hover h3,.crit-list li.act h3{color:var(--blue)}
+.crit-list li a:hover .go,.crit-list li.act .go{background:var(--blue);border-color:var(--blue);color:var(--black)}
+.chips{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.9rem}
+.chips span{font-family:var(--mono);font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;border:1px solid var(--line);padding:.25rem .55rem;color:#c4ccd0}
+
+/* everyday */
+.everyday{background:var(--paper);color:var(--black);padding:8rem 0}
+.ev-head{display:flex;justify-content:space-between;align-items:end;gap:2rem;margin-bottom:3.5rem}
+.ev-head .sec-tag{color:var(--navy)}
+.ev-head .sec-tag b{background:var(--navy);color:var(--paper)}
+.ev-head h2.big .blue{color:var(--navy)}
+.ev-head p{max-width:400px;color:#3d4a50}
+.ev-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:1rem}
+.ev{position:relative;overflow:hidden;background:var(--black);color:var(--paper);min-height:380px;display:flex;flex-direction:column;justify-content:flex-end;padding:1.6rem}
+.ev img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .7s,filter .7s;filter:saturate(.85)}
+.ev::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(8,9,10,.92),rgba(8,9,10,0) 60%)}
+.ev>*:not(img){position:relative;z-index:2}
+.ev:hover img{transform:scale(1.06);filter:saturate(1.1)}
+.ev h3{font-family:var(--head);font-weight:800;font-size:1.9rem;text-transform:uppercase;line-height:1}
+.ev .mono{color:var(--blue-l);margin-bottom:.5rem}
+.ev .plus{position:absolute;top:1.2rem;right:1.2rem;width:42px;height:42px;background:var(--blue);color:var(--black);display:grid;place-items:center;font-size:1.4rem;font-weight:700;transition:.3s}
+.ev:hover .plus{transform:rotate(90deg)}
+.ev.a{grid-column:span 7;min-height:460px}
+.ev.b{grid-column:span 5;min-height:460px}
+.ev.c,.ev.d,.ev.e{grid-column:span 4}
+.ev.round{border-radius:0 120px 0 0}
+.ev.cut{clip-path:polygon(0 0,100% 0,100% 100%,0 100%,0 0)}
+
+/* field */
+.field{padding:7rem 0;background:var(--black)}
+.field-head{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:end;margin-bottom:3rem}
+.field-head p{color:#9aa6ab}
+.film{display:grid;grid-template-columns:1.2fr .8fr 1fr .8fr;grid-template-rows:260px 260px;gap:.8rem}
+.film figure{position:relative;overflow:hidden;background:var(--ink)}
+.film img{width:100%;height:100%;object-fit:cover;transition:transform .7s}
+.film figure:hover img{transform:scale(1.05)}
+.film figcaption{position:absolute;left:0;bottom:0;background:var(--black);color:var(--blue);padding:.45rem .7rem}
+.film .f1{grid-row:span 2}
+.film .f3{grid-row:span 2}
+.film .f2 img{object-position:center 30%}
+
+/* mission */
+.mission{background:var(--navy);position:relative;overflow:hidden;padding:8rem 0}
+.mission::before{content:"PAX EX CHAO";position:absolute;left:-1rem;bottom:-3.5rem;font-family:var(--head);font-weight:900;font-size:16vw;line-height:1;color:rgba(0,152,222,.12);white-space:nowrap;pointer-events:none}
+.mis-grid{position:relative;display:grid;grid-template-columns:.9fr 1.1fr;gap:5rem;align-items:center}
+.badge-wrap{position:relative;max-width:460px}
+.badge-wrap img{width:100%;filter:drop-shadow(0 30px 50px rgba(0,0,0,.45))}
+@keyframes spin{to{transform:rotate(360deg)}}
+.since{position:absolute;right:-1rem;bottom:2rem;background:var(--black);border:2px solid var(--blue);padding:1rem 1.3rem;text-align:center}
+.since b{display:block;font-family:var(--head);font-size:3.2rem;font-weight:900;line-height:1;color:var(--blue)}
+.mission .sec-tag{color:var(--blue-l)}
+.mission h2.big .blue{color:var(--blue-l)}
+.mission p.lead{margin:1.6rem 0 2.4rem;color:#cfe3ec;font-size:1.08rem;max-width:560px}
+.leaders{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:2.4rem}
+.leader{display:flex;gap:1rem;align-items:center;background:rgba(8,9,10,.45);border:1px solid rgba(76,192,242,.25);padding:1rem}
+.leader img,.leader .ini{width:72px;height:72px;object-fit:cover;flex-shrink:0;clip-path:polygon(0 0,100% 0,100% 75%,75% 100%,0 100%)}
+.leader .ini{background:var(--blue);color:var(--black);display:grid;place-items:center;font-family:var(--head);font-weight:900;font-size:1.8rem}
+.leader b{display:block;font-family:var(--head);font-size:1.35rem;text-transform:uppercase;line-height:1.05}
+.leader span{color:var(--blue-l)}
+
+/* intel */
+.intel{background:var(--ink);padding:7rem 0}
+.intel-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;grid-template-rows:auto auto;gap:1px;background:var(--line);border:1px solid var(--line);margin-top:3rem}
+.intel-grid a{background:var(--ink);padding:2.2rem;display:flex;flex-direction:column;justify-content:space-between;gap:2rem;min-height:240px;transition:.25s;position:relative}
+.intel-grid a:hover{background:var(--ink2)}
+.intel-grid a:hover .arr{background:var(--blue);color:var(--black)}
+.intel-grid h3{font-family:var(--head);font-weight:800;font-size:2rem;text-transform:uppercase;line-height:1}
+.intel-grid p{color:#9aa6ab;font-size:.95rem;margin-top:.6rem}
+.intel-grid .arr{width:44px;height:44px;border:1px solid var(--line);display:grid;place-items:center;transition:.25s}
+.intel-grid .rev{grid-row:span 2;background:#fff;color:var(--black)}
+.intel-grid .rev:hover{background:var(--paper)}
+.intel-grid .rev p{color:#3d4a50}
+.rev .stars{color:#f5b400;font-size:1.6rem;letter-spacing:.2em}
+.rev .gimg{width:150px}
+.rev .huge{font-family:var(--head);font-weight:900;font-size:5.5rem;line-height:.85;text-transform:uppercase}
+.intel-grid .mono{color:var(--blue)}
+.intel-grid .rev .mono{color:var(--navy)}
+
+/* locations */
+.locs{position:relative;display:grid;grid-template-columns:1fr 1fr;min-height:620px;background:var(--black)}
+.locs-img{position:relative;overflow:hidden}
+.locs-img img{width:100%;height:100%;object-fit:cover}
+.locs-img .coord{position:absolute;bottom:1.4rem;left:1.4rem;background:var(--black);color:var(--blue);padding:.5rem .8rem}
+.locs-body{padding:6rem 5vw;display:flex;flex-direction:column;justify-content:center}
+.city-list{list-style:none;margin:2.4rem 0;columns:2;column-gap:2rem}
+.city-list li{font-family:var(--head);font-weight:800;font-size:2.1rem;text-transform:uppercase;padding:.55rem 0;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:.8rem;break-inside:avoid}
+.city-list li::before{content:"";width:10px;height:10px;border:2px solid var(--blue);transform:rotate(45deg);flex-shrink:0}
+.city-list li.hq{color:var(--blue)}
+.city-list li.hq::before{background:var(--blue)}
+
+/* contact */
+.contact{background:var(--paper);color:var(--black);padding:8rem 0}
+.con-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem}
+.contact .sec-tag{color:var(--navy)}
+.contact .sec-tag b{background:var(--navy);color:var(--paper)}
+.contact h2.big .blue{color:var(--navy)}
+.con-lines{margin-top:2.6rem;border-top:2px solid var(--black)}
+.con-lines a,.con-lines div{display:grid;grid-template-columns:130px 1fr;gap:1rem;padding:1.1rem 0;border-bottom:1px solid #c6cfd3;align-items:center;transition:.2s}
+.con-lines a:hover{color:var(--navy);padding-left:.5rem}
+.con-lines .mono{color:#5b686e}
+.con-lines strong{font-family:var(--head);font-weight:800;font-size:1.6rem;text-transform:uppercase;line-height:1.1}
+form.quote{background:var(--black);color:var(--paper);padding:2.6rem;clip-path:var(--chamfer)}
+form.quote h3{font-family:var(--head);font-weight:900;font-size:2.4rem;text-transform:uppercase;line-height:1;margin-bottom:.4rem}
+form.quote>p{color:var(--mute);margin-bottom:1.8rem}
+.fld{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.f{display:flex;flex-direction:column;gap:.4rem;margin-bottom:1rem}
+.f label{font-family:var(--mono);font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+.f input,.f select,.f textarea{background:var(--ink);border:1px solid var(--line);color:var(--paper);padding:.9rem;font:inherit;font-size:.95rem;outline:none;transition:.2s}
+.f input:focus,.f select:focus,.f textarea:focus{border-color:var(--blue)}
+.f textarea{min-height:110px;resize:vertical}
+form.quote .btn{width:100%;justify-content:center}
+.thanks{display:none;margin-top:1rem;color:var(--blue-l);font-size:.92rem}
+
+/* footer */
+footer{background:var(--black);border-top:4px solid var(--blue);padding:5rem 0 2rem}
+.ft-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:3rem}
+.ft-grid img.flogo{height:78px;width:auto;margin-bottom:1.2rem}
+.ft-grid p{color:var(--mute);font-size:.92rem;max-width:300px}
+.ft-grid h4{font-family:var(--mono);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--blue);margin-bottom:1.2rem}
+.ft-grid ul{list-style:none}
+.ft-grid li{margin-bottom:.6rem}
+.ft-grid li a{color:#c4ccd0;font-size:.95rem;transition:.2s}
+.ft-grid li a:hover{color:var(--blue)}
+.social{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.6rem}
+.social a{width:40px;height:40px;border:1px solid var(--line);display:grid;place-items:center;transition:.2s}
+.social a:hover{background:var(--blue);border-color:var(--blue);color:var(--black)}
+.social svg{width:17px;height:17px;fill:currentColor}
+.ft-bottom{margin-top:4rem;padding-top:1.6rem;border-top:1px solid var(--line);display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;font-size:.85rem;color:var(--mute)}
+.ft-bottom a{color:var(--blue)}
+.ft-bottom a:hover{text-decoration:underline}
+
+/* mobile bar */
+.mbar{display:none}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(30px);transition:opacity .8s,transform .8s}
+.rv.in{opacity:1;transform:none}
+
+@media(max-width:1100px){
+  nav,.h-cta .btn-line{display:none}
+  .burger{display:block}
+  nav.open{display:block;position:absolute;top:84px;left:0;right:0;background:var(--black);border-bottom:1px solid var(--line);padding:1.5rem 4vw}
+  nav.open ul{flex-direction:column;gap:1rem}
+  .hero-grid,.crit-grid,.mis-grid,.con-grid,.field-head{grid-template-columns:1fr;gap:3rem}
+  .motto-v{display:none}
+  .crit-side{position:static}
+  .ft-grid{grid-template-columns:1fr 1fr}
+  .intel-grid{grid-template-columns:1fr 1fr}
+  .intel-grid .rev{grid-row:auto;grid-column:span 2}
+}
+@media(max-width:760px){
+  .dispatch .d-right a:not(:first-child){display:none}
+  .logo img{height:46px}
+  .h-cta .btn-fill{display:none}
+  .fronts,.locs{grid-template-columns:1fr}
+  .front{min-height:440px;padding:2rem}
+  .front .idx{left:2rem;font-size:5rem}
+  .ev.a,.ev.b,.ev.c,.ev.d,.ev.e{grid-column:span 12;min-height:340px}
+  .ev-head{flex-direction:column;align-items:flex-start}
+  .film{grid-template-columns:1fr 1fr;grid-template-rows:repeat(3,200px)}
+  .film .f1,.film .f3{grid-row:auto}
+  .film .f1{grid-column:span 2}
+  .leaders,.fld{grid-template-columns:1fr}
+  .intel-grid{grid-template-columns:1fr}
+  .intel-grid .rev{grid-column:auto}
+  .city-list{columns:1}
+  .locs-img{height:340px}
+  .ft-grid{grid-template-columns:1fr}
+  .con-lines a,.con-lines div{grid-template-columns:1fr;gap:.2rem}
+  .mbar{display:grid;grid-template-columns:1fr 1fr;position:fixed;bottom:0;left:0;right:0;z-index:60}
+  .mbar a{padding:1rem;text-align:center;font-family:var(--mono);font-weight:700;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase}
+  .mbar a:first-child{background:var(--blue);color:var(--black)}
+  .mbar a:last-child{background:var(--paper);color:var(--black)}
+  footer{padding-bottom:5rem}
+}
+</style>
+</head>
+<body>
+
+<div class="dispatch">
+  <div class="wrap">
+    <div><span class="pulse"></span>24/7 emergency response &middot; Calgary &amp; area</div>
+    <div class="d-right">
+      <a href="tel:4038725261">(403) 872-5261</a>
+      <a href="tel:4034639132">(403) 463-9132</a>
+      <a href="mailto:contact@filthymasters.ca">contact@filthymasters.ca</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="wrap">
+    <a href="https://filthymasters.ca/" class="logo"><img src="images/logo.png" alt="Filthy Masters"></a>
+    <nav id="nav">
+      <ul>
+        <li><a href="https://filthymasters.ca/our-services/">Our Services</a></li>
+        <li><a href="https://filthymasters.ca/our-mission/">Our Mission</a></li>
+        <li><a href="https://filthymasters.ca/blog-war-journal/">War Journal</a></li>
+        <li><a href="https://filthymasters.ca/locations/">Locations</a></li>
+        <li><a href="https://filthymasters.ca/deals-and-offers/">Deals and Offers</a></li>
+        <li><a href="https://filthymasters.ca/cleaning-revival-products/">Products</a></li>
+        <li><a href="https://filthymasters.ca/contact-us-filthymasters/">Contact Us</a></li>
+      </ul>
+    </nav>
+    <div class="h-cta">
+      <a href="tel:4038725261" class="btn btn-line">Call Now</a>
+      <a href="https://book.housecallpro.com/book/Filthy-Masters/4a87f489021844cf802d63cc9408f1d6" class="btn btn-fill" target="_blank" rel="noopener">Book Online</a>
+      <button class="burger" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h12"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-bg"><img src="images/hero-biohazard.jpg" alt="Filthy Masters biohazard technician in protective gear"></div>
+  <div class="wrap hero-grid">
+    <div style="position:relative">
+      <div class="tag mono">Veteran owned &middot; Est. 2017 &middot; Alberta</div>
+      <h1>Biohazard property <span class="blue">restoration</span> &amp; <span class="out">specialized</span> hoarding cleaning</h1>
+      <p class="hero-sub">In <strong>Calgary</strong> and surrounding areas. 24/7 emergency response for biohazard, drug, trauma, flood and hoarding cleanup.</p>
+      <div class="hero-btns">
+        <a href="https://book.housecallpro.com/book/Filthy-Masters/4a87f489021844cf802d63cc9408f1d6" class="btn btn-fill" target="_blank" rel="noopener">Book Online <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+        <a href="https://filthymasters.ca/our-services/" class="btn btn-line">Our Services</a>
+      </div>
+      <div class="motto-v">PAX EX CHAO</div>
+    </div>
+    <aside class="console">
+      <div class="console-top"><span class="mono">Request response</span><span class="mono live"><span class="pulse" style="background:var(--blue)"></span>Live 24/7</span></div>
+      <h3>Where do you need us?</h3>
+      <div class="choice">
+        <a href="https://filthymasters.ca/our-services/residential-services-filthy-masters/"><b>Residential</b><span>For your home</span></a>
+        <a href="https://filthymasters.ca/our-services/commercial-cleaning-services/"><b>Commercial</b><span>For your business</span></a>
+      </div>
+      <div class="lines">
+        <a href="tel:4038725261"><span class="mono">Call now</span><span class="num">(403) 872-5261</span></a>
+        <a href="tel:4034639132"><span class="mono">Call now</span><span class="num">(403) 463-9132</span></a>
+      </div>
+      <a href="#contact" class="btn btn-fill">Contact Us</a>
+    </aside>
+  </div>
+</section>
+
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span>Biohazard</span><span>Trauma</span><span>Crime scene</span><span>Hoarding</span><span>Drug decontamination</span><span>Flood &amp; water damage</span><span>Mold remediation</span><span>Carpet</span><span>Upholstery</span><span>Windows</span><span>Power washing</span><span>Gutters</span>
+    <span>Biohazard</span><span>Trauma</span><span>Crime scene</span><span>Hoarding</span><span>Drug decontamination</span><span>Flood &amp; water damage</span><span>Mold remediation</span><span>Carpet</span><span>Upholstery</span><span>Windows</span><span>Power washing</span><span>Gutters</span>
+  </div>
+</div>
+
+<section class="fronts">
+  <a href="https://filthymasters.ca/our-services/residential-services-filthy-masters/" class="front">
+    <img src="images/carpet-cleaning.jpg" alt="Filthy Masters carpet cleaning in a Calgary home">
+    <div class="idx">01</div>
+    <div>
+      <div class="mono">For your home</div>
+      <h2>Residential<br>services</h2>
+      <span class="arrow">Explore residential &rarr;</span>
+    </div>
+  </a>
+  <a href="https://filthymasters.ca/our-services/commercial-cleaning-services/" class="front com">
+    <img src="images/commercial-team.jpg" alt="Filthy Masters commercial cleaning">
+    <div class="idx">02</div>
+    <div>
+      <div class="mono">For your business</div>
+      <h2>Commercial<br>services</h2>
+      <span class="arrow">Explore commercial &rarr;</span>
+    </div>
+  </a>
+</section>
+
+<section class="critical">
+  <div class="wrap crit-grid">
+    <div class="crit-side rv">
+      <div class="sec-tag mono"><b>24/7</b> Restoration services</div>
+      <h2 class="big">When it's more than <span class="blue">a mess</span></h2>
+      <p>Specialized restoration for commercial and residential properties across Calgary. Compassionate, non-judgmental and ready around the clock.</p>
+      <div class="viewer">
+        <span class="stamp mono" id="vstamp">Biohazard</span>
+        <img src="images/trauma-cleanup.jpg" class="on" data-k="0" alt="Biohazard cleaning">
+        <img src="images/hoarding-cleanup.jpg" data-k="1" alt="Hoarding cleanup">
+        <img src="images/drug-decontamination.jpg" data-k="2" alt="Drug decontamination">
+        <img src="images/water-damage.jpg" data-k="3" alt="Water damage restoration">
+        <img src="images/mold-remediation.jpg" data-k="4" alt="Mold remediation">
+      </div>
+    </div>
+    <ul class="crit-list rv">
+      <li class="act" data-k="0" data-n="Biohazard"><a href="https://filthymasters.ca/our-services/restoration-services/biohazard-cleaning/">
+        <span class="n">/01</span>
+        <div><h3>Biohazard, trauma &amp; crime scene</h3>
+          <div class="chips"><span>Trauma</span><span>Crime scenes</span><span>Vehicle decontamination</span><span>Fecal matter</span><span>Pest droppings</span></div></div>
+        <span class="go">&rarr;</span></a></li>
+      <li data-k="1" data-n="Hoarding"><a href="https://filthymasters.ca/distressed-property-hoarding-cleanup-in-calgary/">
+        <span class="n">/02</span>
+        <div><h3>Hoarding cleaning</h3><p>Compassionate, non-judgmental restoration of overwhelmed living spaces.</p></div>
+        <span class="go">&rarr;</span></a></li>
+      <li data-k="2" data-n="Drug decon"><a href="https://filthymasters.ca/our-services/restoration-services/biohazard-cleaning/">
+        <span class="n">/03</span>
+        <div><h3>Drug decontamination</h3><p>Decontamination of properties affected by drug use.</p></div>
+        <span class="go">&rarr;</span></a></li>
+      <li data-k="3" data-n="Water damage"><a href="https://filthymasters.ca/our-services/restoration-services/flood-restoration-services/">
+        <span class="n">/04</span>
+        <div><h3>Water damage restoration</h3>
+          <div class="chips"><span>Flood cleanup</span><span>Water extraction</span><span>Leaky basements</span><span>Wet carpet</span></div></div>
+        <span class="go">&rarr;</span></a></li>
+      <li data-k="4" data-n="Mold"><a href="https://filthymasters.ca/effective-mold-remediation-services/">
+        <span class="n">/05</span>
+        <div><h3>Mold remediation</h3><p>Mold removal and remediation.</p></div>
+        <span class="go">&rarr;</span></a></li>
+    </ul>
+  </div>
+</section>
+
+<section class="everyday">
+  <div class="wrap">
+    <div class="ev-head rv">
+      <div>
+        <div class="sec-tag mono"><b>Residential</b> Everyday cleaning</div>
+        <h2 class="big">Take back <span class="blue">your home</span></h2>
+      </div>
+      <p>The same crew that handles the toughest jobs in Calgary also cleans your carpets, couches, windows, siding and eavestroughs.</p>
+    </div>
+    <div class="ev-grid">
+      <a href="https://filthymasters.ca/our-services/residential-services-filthy-masters/takeback-your-home-with-our-expert-carpet-cleaning-services/" class="ev a rv"><img src="images/carpet-cleaning.jpg" alt="Carpet cleaning" style="object-position:center 60%"><span class="plus">+</span><div class="mono">Residential</div><h3>Carpet cleaning</h3></a>
+      <a href="https://filthymasters.ca/window-cleaning-res/" class="ev b round rv"><img src="images/window-cleaning.png" alt="Window cleaning" style="object-position:center 30%"><span class="plus">+</span><div class="mono">Residential</div><h3>Window cleaning</h3></a>
+      <a href="https://filthymasters.ca/our-services/residential-services-filthy-masters/premium-pressure-washing-services/" class="ev c rv"><img src="images/power-washing.jpg" alt="Power washing"><span class="plus">+</span><div class="mono">Residential</div><h3>Power washing</h3></a>
+      <a href="https://filthymasters.ca/our-services/residential-services-filthy-masters/professional-upholstery-cleaning-services/" class="ev d rv"><img src="images/upholstery-cleaning.jpg" alt="Upholstery cleaning"><span class="plus">+</span><div class="mono">Residential</div><h3>Upholstery cleaning</h3></a>
+      <a href="https://filthymasters.ca/our-services/residential-services-filthy-masters/reliable-gutter-and-eavestrough-cleaning-services/" class="ev e rv"><img src="images/gutter-cleaning.jpg" alt="Gutter and eavestrough cleaning"><span class="plus">+</span><div class="mono">Residential</div><h3>Gutter &amp; eavestrough</h3></a>
+    </div>
+  </div>
+</section>
+
+<section class="field">
+  <div class="wrap">
+    <div class="field-head rv">
+      <div>
+        <div class="sec-tag mono"><b>Field</b> From the job site</div>
+        <h2 class="big">Boots on <span class="blue">the ground</span></h2>
+      </div>
+      <p>Homes, storefronts and commercial properties across Calgary and area. Follow more of our work on Instagram, TikTok and YouTube.</p>
+    </div>
+    <div class="film rv">
+      <figure class="f1"><img src="images/window-cleaning.png" alt="Commercial window cleaning"><figcaption class="mono">Commercial windows</figcaption></figure>
+      <figure class="f2"><img src="images/hoarding-cleanup.jpg" alt="Hoarding cleanup"><figcaption class="mono">Hoarding</figcaption></figure>
+      <figure class="f3"><img src="images/carpet-cleaning.jpg" alt="Carpet cleaning"><figcaption class="mono">Carpet</figcaption></figure>
+      <figure class="f4"><img src="images/water-damage.jpg" alt="Water damage"><figcaption class="mono">Flood</figcaption></figure>
+      <figure class="f5"><img src="images/commercial-building.jpg" alt="Commercial property"><figcaption class="mono">Commercial</figcaption></figure>
+      <figure class="f6"><img src="images/power-washing.jpg" alt="Power washing"><figcaption class="mono">Power washing</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="mission">
+  <div class="wrap mis-grid">
+    <div class="badge-wrap rv">
+      <img src="images/veteran-owned.png" alt="Veteran Owned Business, formerly Canadian Forces">
+      <div class="since"><span class="mono">Founded</span><b>2017</b></div>
+    </div>
+    <div class="rv">
+      <div class="sec-tag mono"><b>Our mission</b> Pax ex chao</div>
+      <h2 class="big">A veteran owned business in <span class="blue">Alberta</span></h2>
+      <p class="lead">Filthy Masters was founded in 2017 and serves commercial and residential properties across Calgary and surrounding areas.</p>
+      <div class="leaders">
+        <div class="leader"><img src="images/chris-rozenberg.jpg" alt="Christopher Rozenberg"><div><b>Christopher Rozenberg</b><span class="mono">CEO</span></div></div>
+        <div class="leader"><div class="ini">KM</div><div><b>Kyle Moras</b><span class="mono">COO</span></div></div>
+      </div>
+      <a href="https://filthymasters.ca/our-mission/" class="btn btn-fill">Read our mission</a>
+    </div>
+  </div>
+</section>
+
+<section class="intel">
+  <div class="wrap">
+    <div class="rv">
+      <div class="sec-tag mono"><b>Intel</b> More from Filthy Masters</div>
+      <h2 class="big">Reviews, news &amp; <span class="blue" style="color:var(--blue)">deals</span></h2>
+    </div>
+    <div class="intel-grid rv">
+      <a href="https://g.co/kgs/t3kziiN" target="_blank" rel="noopener" class="rev">
+        <div><img src="images/google-reviews.png" alt="Google Reviews" class="gimg"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></div>
+        <div><div class="huge">Hundreds</div><p>of Google reviews from Calgary homes and businesses. Read what clients say.</p></div>
+        <span class="arr">&rarr;</span>
+      </a>
+      <a href="https://filthymasters.ca/blog-war-journal/"><div><div class="mono">Blog</div><h3>War Journal</h3><p>Industry news and tips.</p></div><span class="arr">&rarr;</span></a>
+      <a href="https://filthymasters.ca/deals-and-offers/"><div><div class="mono">Save</div><h3>Deals &amp; offers</h3><p>Current deals on Filthy Masters services.</p></div><span class="arr">&rarr;</span></a>
+      <a href="https://filthymasters.ca/cleaning-revival-products/"><div><div class="mono">Shop</div><h3>Cleaning &amp; revival products</h3></div><span class="arr">&rarr;</span></a>
+      <a href="https://book.housecallpro.com/book/Filthy-Masters/4a87f489021844cf802d63cc9408f1d6" target="_blank" rel="noopener"><div><div class="mono">Schedule</div><h3>Book online</h3></div><span class="arr">&rarr;</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="locs">
+  <div class="locs-img"><img src="images/calgary-skyline.jpg" alt="Calgary skyline and Bow River"><span class="coord mono">HQ &middot; Calgary, AB</span></div>
+  <div class="locs-body rv">
+    <div class="sec-tag mono"><b>Locations</b> Service area</div>
+    <h2 class="big">Calgary &amp; <span class="blue">surrounding areas</span></h2>
+    <ul class="city-list">
+      <li class="hq">Calgary</li><li>Airdrie</li><li>Okotoks</li><li>Cochrane</li><li>Chestermere</li><li>Langdon</li>
+    </ul>
+    <div><a href="https://filthymasters.ca/locations/" class="btn btn-line">View all locations</a></div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap con-grid">
+    <div class="rv">
+      <div class="sec-tag mono"><b>Contact</b> Get in touch</div>
+      <h2 class="big">Ready when <span class="blue">you are</span></h2>
+      <div class="con-lines">
+        <a href="tel:4038725261"><span class="mono">Phone</span><strong>(403) 872-5261</strong></a>
+        <a href="tel:4034639132"><span class="mono">Phone</span><strong>(403) 463-9132</strong></a>
+        <a href="mailto:contact@filthymasters.ca"><span class="mono">Email</span><strong style="text-transform:none">contact@filthymasters.ca</strong></a>
+        <div><span class="mono">Address</span><strong>838 A 69 Ave SW,<br>Calgary, AB T2V 0P3</strong></div>
+      </div>
+    </div>
+    <form class="quote rv" onsubmit="event.preventDefault();var d=new FormData(this);location.href='mailto:contact@filthymasters.ca?subject='+encodeURIComponent('Service request: '+d.get('service'))+'&body='+encodeURIComponent('Name: '+d.get('name')+'\nPhone: '+d.get('phone')+'\nEmail: '+d.get('email')+'\n\n'+d.get('msg'));document.getElementById('thx').style.display='block'">
+      <h3>Contact us</h3>
+      <p>Tell us what you need and we'll respond as soon as possible.</p>
+      <div class="fld">
+        <div class="f"><label for="n">Name</label><input id="n" name="name" required></div>
+        <div class="f"><label for="p">Phone</label><input id="p" name="phone" type="tel" required></div>
+      </div>
+      <div class="f"><label for="e">Email</label><input id="e" name="email" type="email"></div>
+      <div class="f"><label for="s">Service</label>
+        <select id="s" name="service">
+          <option>Biohazard cleaning</option><option>Trauma / crime scene</option><option>Hoarding cleaning</option><option>Drug decontamination</option><option>Water damage restoration</option><option>Mold remediation</option><option>Carpet cleaning</option><option>Upholstery cleaning</option><option>Window cleaning</option><option>Power washing</option><option>Gutter cleaning</option><option>Commercial services</option>
+        </select></div>
+      <div class="f"><label for="m">Message</label><textarea id="m" name="msg"></textarea></div>
+      <button class="btn btn-fill" type="submit">Send request</button>
+      <p class="thanks" id="thx">Thanks for reaching out. We'll get back to you as soon as possible.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="ft-grid">
+      <div>
+        <img src="images/logo.png" alt="Filthy Masters" class="flogo">
+        <p>Biohazard property restoration and specialized hoarding cleaning in Calgary. Veteran owned. Pax ex chao.</p>
+        <div class="social">
+          <a href="https://www.facebook.com/filthymasters/" aria-label="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M14 8h3V4h-3c-2.8 0-4 1.8-4 4v2H7v4h3v8h4v-8h3l1-4h-4V8.5c0-.3.2-.5.5-.5z"/></svg></a>
+          <a href="https://twitter.com/filthy_masters" aria-label="X" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M17.8 3h3.1l-6.8 7.8L22 21h-6.2l-4.9-6.4L5.3 21H2.2l7.3-8.3L1.9 3h6.4l4.4 5.8L17.8 3zm-1.1 16.2h1.7L7.4 4.7H5.6l11.1 14.5z"/></svg></a>
+          <a href="https://www.youtube.com/@FilthyMasters" aria-label="YouTube" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12 31 31 0 0 0 1 16.8a3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8zM9.7 15V9l5.8 3-5.8 3z"/></svg></a>
+          <a href="https://www.linkedin.com/company/filthy-masters" aria-label="LinkedIn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.2c0-1.2 0-2.8-1.7-2.8s-2 1.3-2 2.7V21h-4z"/></svg></a>
+          <a href="https://www.instagram.com/filthymasters" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-3.3-.1-4.8-1.7-4.9-4.9C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8C2.4 3.9 3.9 2.4 7.2 2.3 8.4 2.2 8.8 2.2 12 2.2zm0 4.7a5.1 5.1 0 1 0 0 10.2 5.1 5.1 0 0 0 0-10.2zm0 8.4a3.3 3.3 0 1 1 0-6.6 3.3 3.3 0 0 1 0 6.6zm5.3-9.8a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4z"/></svg></a>
+          <a href="https://www.tiktok.com/@filthy.masters" aria-label="TikTok" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M19.6 6.7a4.8 4.8 0 0 1-3.8-4.2V2h-3.4v13.4a2.9 2.9 0 1 1-2-2.7V9.2a6.3 6.3 0 1 0 5.4 6.2V8.6a8.2 8.2 0 0 0 3.8 1V6.7z"/></svg></a>
+          <a href="https://g.page/r/Cc2tfCkR2HejEBM/" aria-label="Google" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M21.6 12.2c0-.7-.1-1.4-.2-2H12v3.8h5.4a4.6 4.6 0 0 1-2 3v2.5h3.2c1.9-1.7 3-4.3 3-7.3zM12 22c2.7 0 5-.9 6.6-2.4l-3.2-2.5c-.9.6-2 1-3.4 1-2.6 0-4.8-1.8-5.6-4.1H3.1v2.6A10 10 0 0 0 12 22zM6.4 14a6 6 0 0 1 0-3.9V7.5H3.1a10 10 0 0 0 0 9zM12 5.9c1.5 0 2.8.5 3.8 1.5l2.9-2.9A10 10 0 0 0 3.1 7.5L6.4 10C7.2 7.7 9.4 5.9 12 5.9z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Restoration</h4>
+        <ul>
+          <li><a href="https://filthymasters.ca/our-services/restoration-services/biohazard-cleaning/">Biohazard cleaning</a></li>
+          <li><a href="https://filthymasters.ca/distressed-property-hoarding-cleanup-in-calgary/">Hoarding cleaning</a></li>
+          <li><a href="https://filthymasters.ca/our-services/restoration-services/flood-restoration-services/">Water damage restoration</a></li>
+          <li><a href="https://filthymasters.ca/effective-mold-remediation-services/">Mold remediation</a></li>
+          <li><a href="https://filthymasters.ca/our-services/commercial-cleaning-services/">Commercial services</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Residential</h4>
+        <ul>
+          <li><a href="https://filthymasters.ca/our-services/residential-services-filthy-masters/takeback-your-home-with-our-expert-carpet-cleaning-services/">Carpet cleaning</a></li>
+          <li><a href="https://filthymasters.ca/our-services/residential-services-filthy-masters/professional-upholstery-cleaning-services/">Upholstery cleaning</a></li>
+          <li><a href="https://filthymasters.ca/window-cleaning-res/">Window cleaning</a></li>
+          <li><a href="https://filthymasters.ca/our-services/residential-services-filthy-masters/premium-pressure-washing-services/">Power washing</a></li>
+          <li><a href="https://filthymasters.ca/our-services/residential-services-filthy-masters/reliable-gutter-and-eavestrough-cleaning-services/">Gutter cleaning</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:4038725261">(403) 872-5261</a></li>
+          <li><a href="tel:4034639132">(403) 463-9132</a></li>
+          <li><a href="mailto:contact@filthymasters.ca">contact@filthymasters.ca</a></li>
+          <li style="color:var(--mute);font-size:.95rem">838 A 69 Ave SW,<br>Calgary, AB T2V 0P3</li>
+          <li><a href="https://filthymasters.ca/locations/">Locations</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ft-bottom">
+      <span>&copy; <span id="yr"></span> Filthy Masters. All rights reserved.</span>
+      <span>Design by <a href="https://cleaningdigital.ca/" target="_blank" rel="noopener">Cleaning Digital</a>.</span>
+    </div>
+  </div>
+</footer>
+
+<div class="mbar"><a href="tel:4038725261">Call Now</a><a href="https://book.housecallpro.com/book/Filthy-Masters/4a87f489021844cf802d63cc9408f1d6">Book Online</a></div>
+
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+// critical list image swap
+const items=document.querySelectorAll('.crit-list li'),imgs=document.querySelectorAll('.viewer img'),stamp=document.getElementById('vstamp');
+items.forEach(li=>li.addEventListener('mouseenter',()=>{
+  items.forEach(x=>x.classList.remove('act'));li.classList.add('act');
+  imgs.forEach(i=>i.classList.toggle('on',i.dataset.k===li.dataset.k));stamp.textContent=li.dataset.n;
+}));
+// reveal
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
